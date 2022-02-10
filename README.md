@@ -32,5 +32,3 @@ Lista de TODOs - Parte 1
 - TODO 012: Sobrescrever o método performClick()
 
 - TODO 013: Adicionar um bloco init { } para tornar a View clicável
-
-![Captura de Tela 2022-02-10 às 10.03.55](/Users/franciscosilva/Desktop/Captura de Tela 2022-02-10 às 10.03.55.png)

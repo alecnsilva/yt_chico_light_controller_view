@@ -1,6 +1,6 @@
-TODO 001: Criar um projeto novo no Android Studio
-TODO 002: Criar um layout com mockup
-TODO 003: Criar uma classe LightControllerView que estende View
+# TODO 001: Criar um projeto novo no Android Studio
+# TODO 002: Criar um layout com mockup
+# TODO 003: Criar uma classe LightControllerView que estende View
 TODO 004: Declare as variáveis e constantes necessárias para criar a View
 TODO 005: Criar uma enum ControllerSetting
 TODO 006: Sobrescrever a função onSizeChanged()

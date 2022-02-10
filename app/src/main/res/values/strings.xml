@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">YT_Chico_light_controller_view</string>
+    <string name="lights">Lights</string>
+    <string name="FigMock">Mock content</string>
 </resources>

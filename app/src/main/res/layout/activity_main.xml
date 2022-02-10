@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25"/>
 
-    <ImageView
+    <br.com.yt.android.chico_light_controller_view.lightContollerView
         android:id="@+id/lightControllerView"
         android:layout_width="200dp"
         android:layout_height="200dp"

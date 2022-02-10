@@ -1,10 +1,10 @@
 # TODO 001: Criar um projeto novo no Android Studio
 # TODO 002: Criar um layout com mockup
 # TODO 003: Criar uma classe LightControllerView que estende View
-TODO 004: Declare as variáveis e constantes necessárias para criar a View
-TODO 005: Criar uma enum ControllerSetting
-TODO 006: Sobrescrever a função onSizeChanged()
-TODO 007: Sobrescrever a função onDraw()
+# TODO 004: Declare as variáveis e constantes necessárias para criar a View
+# TODO 005: Criar uma enum ControllerSetting
+# TODO 006: Sobrescrever a função onSizeChanged()
+# TODO 007: Sobrescrever a função onDraw()
 TODO 008: Incorporar a View customizada no layout XML
 TODO 009: Adicionar os rótulos de texto
 TODO 010: Adicionar um retângulo de indicador

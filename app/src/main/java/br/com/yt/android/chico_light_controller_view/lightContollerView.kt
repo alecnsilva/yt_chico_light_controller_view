@@ -48,7 +48,7 @@ class lightContollerView @JvmOverloads constructor(
     /**
      * Controller setting
      */
-    private var controllerSetting = ControllerSetting.TWENTY_FIVE
+    private var controllerSetting = ControllerSetting.OFF
 
     /**
      * Paint
@@ -62,6 +62,9 @@ class lightContollerView @JvmOverloads constructor(
         typeface = Typeface.create("", Typeface.BOLD)
     }
 
+    init {
+        isClickable = true
+    }
     /**
      * On size changed
      *
@@ -87,6 +90,9 @@ class lightContollerView @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
 
+        pointPosition.x = 0.0f
+        pointPosition.y = 0.0f
+
         // definir uma cor para o paint
         paint.color = Color.WHITE
 
@@ -107,7 +113,7 @@ class lightContollerView @JvmOverloads constructor(
         )
         canvas?.drawRect(indicator, paint)
 
-        paint.color = Color.BLACK
+        paint.color = Color.WHITE
 
         // Percorrer os valores da enum e desenhar um label para cada um
         /**
@@ -138,7 +144,7 @@ class lightContollerView @JvmOverloads constructor(
         height: Float
     ) {
         // X Posiciona os elementos 1.5 a mais do final (width) do canvas
-        x = (1.39 * barWidth + labelOffsetX).toFloat()
+        x = (1.5 * barWidth + labelOffsetX).toFloat()
 
         // Y Distribui os elementos em linhas sequentes
         val barHeight = height - 2 * paddingOffset
@@ -151,6 +157,15 @@ class lightContollerView @JvmOverloads constructor(
             4 -> 0.0f
             else -> { 0.0f }
         } + (1.5 * paddingOffset).toFloat()
+    }
+
+    override fun performClick(): Boolean {
+        if (super.performClick()) return true
+
+        controllerSetting = controllerSetting.next()
+
+        invalidate()
+        return true
     }
 
     private fun PointF.createIndicatorRectF(
@@ -208,7 +223,7 @@ class lightContollerView @JvmOverloads constructor(
          *
          * @constructor Create empty S e v e n t y_f i f t y
          */
-        SEVENTY_FIFTY(label = 75),
+        SEVENTY_FIVE(label = 75),
 
         /**
          * F u l l
@@ -216,5 +231,18 @@ class lightContollerView @JvmOverloads constructor(
          * @constructor Create empty F u l l
          */
         FULL(label = 100);
+
+        /**
+         * Um método de conveniência para ciclar pelos valores da enum
+         */
+        fun next(): ControllerSetting {
+            return when (this) {
+                OFF -> TWENTY_FIVE
+                TWENTY_FIVE -> FIFTY
+                FIFTY -> SEVENTY_FIVE
+                SEVENTY_FIVE -> FULL
+                FULL -> OFF
+            }
+        }
     }
 }

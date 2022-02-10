@@ -8,6 +8,6 @@
 # TODO 008: Incorporar a View customizada no layout XML
 # TODO 009: Adicionar os rótulos de texto
 # TODO 010: Adicionar um retângulo de indicador
-TODO 011: Adicionar um método next() na enum
-TODO 012: Sobrescrever o método performClick()
-TODO 013: Adicionar um bloco init { } para tornar a View clicável
+# TODO 011: Adicionar um método next() na enum
+# TODO 012: Sobrescrever o método performClick()
+# TODO 013: Adicionar um bloco init { } para tornar a View clicável

@@ -5,9 +5,9 @@
 # TODO 005: Criar uma enum ControllerSetting
 # TODO 006: Sobrescrever a função onSizeChanged()
 # TODO 007: Sobrescrever a função onDraw()
-TODO 008: Incorporar a View customizada no layout XML
-TODO 009: Adicionar os rótulos de texto
-TODO 010: Adicionar um retângulo de indicador
+# TODO 008: Incorporar a View customizada no layout XML
+# TODO 009: Adicionar os rótulos de texto
+# TODO 010: Adicionar um retângulo de indicador
 TODO 011: Adicionar um método next() na enum
 TODO 012: Sobrescrever o método performClick()
 TODO 013: Adicionar um bloco init { } para tornar a View clicável
